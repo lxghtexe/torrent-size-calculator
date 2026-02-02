@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Torrent Size Calculator</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen flex flex-col items-center justify-center p-6">
+
+	<!-- Main Card -->
+	<div class="bg-white w-full max-w-4xl rounded-2xl p-6">
+		<h1 class="text-2xl font-bold mb-4 text-gray-800">Torrent Size Calculator</h1>
+
+		<!-- Table -->
+		<div class="border rounded-xl overflow-hidden">
+			<div class="grid grid-cols-12 bg-gray-200 text-sm font-semibold p-3">
+				<div class="col-span-1"></div>
+
+				<div class="col-span-2">Name</div>
+				<div class="col-span-4">Link</div>
+				<div class="col-span-3">Size</div>
+				<div class="col-span-2">Actions</div>
+			</div>
+			<div id="tableBody" class="max-h-64 overflow-y-auto"></div>
+		</div>
+
+		<!-- Controls -->
+		<div class="flex flex-wrap gap-3 mt-4">
+			<button id="addBtn"
+				class="flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+				<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+					stroke-width="1.5" stroke="currentColor" class="size-6">
+					<path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+				</svg>
+				Add Torrent
+			</button>
+			<button id="exportBtn"
+				class="bg-gray-600 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition">Export JSON</button>
+			<label class="bg-gray-600 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition cursor-pointer">
+				Import JSON
+				<input id="importInput" type="file" accept="application/json" class="hidden" />
+			</label>
+		</div>
+
+		<!-- Total -->
+		<div class="mt-6 text-lg font-semibold text-gray-800">
+			Total Size: <span id="totalSize">0 B</span>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer class="mt-6 text-sm text-gray-500 text-center">
+		Made with ❤️ by
+		<a href="https://github.com/lighterly" target="_blank" rel="noopener noreferrer"
+			class="font-semibold text-gray-700 hover:underline">
+			Lighterly
+		</a>
+	</footer>
+
+	<script src="script.js"></script>
+
+</body>
+
+</html>
