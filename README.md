@@ -8,7 +8,7 @@ A lightweight, offline-friendly web tool to calculate and organize torrent sizes
   <img src="screenshot.jpg">
 </p>
 
-[**Open the live project**](https://lighterly.github.io/torrent-size-calculator/) — use it directly in your browser, no setup required.
+[**Open the live project**](https://lxghtexe.github.io/torrent-size-calculator/) — use it directly in your browser, no setup required.
 
 </div>
 
@@ -62,14 +62,14 @@ You can use the project in two ways:
 
 Open the live version:
 
-👉 [https://lighterly.github.io/torrent-size-calculator/](https://lighterly.github.io/torrent-size-calculator/)
+👉 [https://lxghtexe.github.io/torrent-size-calculator/](https://lxghtexe.github.io/torrent-size-calculator/)
 
 ### 2️⃣ Locally
 
 Clone the repository and open `index.html` in your browser:
 
 ```bash
-git clone https://github.com/lighterly/torrent-size-calculator.git
+git clone https://github.com/lxghtexe/torrent-size-calculator.git
 cd torrent-size-calculator
 ```
 
@@ -79,7 +79,7 @@ Then simply open `index.html`.
 
 ## 👨‍💻 Author
 
-Created by **Lighterly**
+Created by **lxghtexe**
 
 Built as a small but polished project focused on usability, interaction, and clean front-end logic.
 
